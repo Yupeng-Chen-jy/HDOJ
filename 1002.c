@@ -1,14 +1,14 @@
 #include <stdio.h>//////
 #include <string.h>/////
 
-// 大数加法函数
+// 大数加法函数  long long int 最多存19位数，考虑用数组+双指针
 void solve(int caseNum) {
     char a[1005],b[1005];//定义两个超大的数组来存数据
     int res[1010]={0};//存结果，1010稍大一点防止越界
 
     scanf("%s %s",a,b);// 用已经定义好的数组以字符形式读进来数据
 
-    printf("Case %d:",caseNum); // 在计算前先把前置条件写好
+    printf("Case %d:\n",caseNum); // 在计算前先把前置条件写好
     printf("%s + %s = ",a,b);
 
     int i=strlen(a)-1;//定义双指针分别指向两个数组的最后一位（即个位）
