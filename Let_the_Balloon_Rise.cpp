@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//
 #include <string.h>//使用strcmp和strcpy
 void solve(int t) {//定义一个solve函数用来solve输入的每个块
     char colors[1005][20];//定义一个colors二维数组,建立了一个1005房间的酒店，每个房间有20张床
